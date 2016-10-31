@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+header {
+	background-color: teal;
+}
+
+.nav-links a,
+.nav-links a:visited{
+	color: white;
+}
+
+.nav-links a:hover{
+	color: lightgrey;
+}
+
+.nav-links{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+.nav-links li{
+	padding: 0.5em 0 0.5em 1em;
+}
+/* END OF HEADER */
+
+/* TITLE */
+#month-title{
+	text-align: center;
+}
+/* END OF TITLE */
+
+/* MAIN SECTION */
+#main-article{
+	padding: 0 0.75em 0 0.75em;
+}
+/* END OF MAIN SECTION */
+
+/* EVENTS SECTION */
+#events {
+	display: flex;
+	flex-direction: column;
+}
+
+.event-info{
+	display: flex;
+	flex-direction: column;
+	padding: 0.75em;
+}
+
+.event-info img{
+	width: 100%;
+	height: auto;
+}
+/* END OF EVENTS SECTION */
+
+/* FOOTER */
+footer {
+	background-color: teal;
+}
+/* END OF FOOTER */
+
+/* FER TABLETS */
+@media only screen and (min-width: 768px) {
+	/* MAIN SECTION */
+	section h5,
+	section h3,
+	section p {
+		font-size: 1.5em;
+	}
+	/* END OF MAIN SECTION */
+}
+
+/* FER DESKTOPS */
+@media only screen and (min-width: 1200px) {
+	/* EVENT SECTION */
+	#events{
+		flex-direction: row;
+	}
+
+	.event-info{
+		flex: 1;
+	}
+	/* END OF EVENT SECTION */
+}
